@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
     radial-gradient(circle at 85% 10%, rgba(22, 64, 255, 0.16), transparent 25%),
     linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 a {
@@ -42,8 +44,17 @@ a {
 
 button,
 input,
+summary,
 textarea {
   font: inherit;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 .page-shell {
@@ -84,6 +95,93 @@ textarea {
 .glass-panel {
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(18px);
+}
+
+.anchor-section {
+  scroll-margin-top: 6.5rem;
+}
+
+.eyebrow-pill {
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0.4rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--brand);
+  box-shadow: 0 8px 24px rgba(15, 23, 46, 0.06);
+}
+
+.card-surface {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow-soft);
+}
+
+.card-lift {
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-4px);
+  border-color: rgba(22, 64, 255, 0.2);
+  box-shadow: 0 24px 70px rgba(16, 24, 40, 0.12);
+}
+
+.cta-primary,
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 700;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, #0f172e, #1640ff, #0eb7b6);
+  color: #ffffff;
+  box-shadow: 0 18px 40px rgba(22, 64, 255, 0.18);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px rgba(22, 64, 255, 0.22);
+}
+
+.cta-secondary {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+}
+
+.cta-secondary:hover {
+  transform: translateY(-2px);
+  border-color: rgba(22, 64, 255, 0.28);
+  color: var(--brand);
+}
+
+.cta-primary:focus-visible,
+.cta-secondary:focus-visible,
+.input-field:focus-visible,
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(22, 64, 255, 0.08),
+    0 18px 40px rgba(15, 23, 46, 0.08);
 }
 
 .input-field {

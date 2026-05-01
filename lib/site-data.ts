@@ -1,5 +1,4 @@
 import {
-  ArrowRightIcon,
   BoltIcon,
   BotIcon,
   BrowserIcon,
@@ -17,38 +16,39 @@ import {
 } from "@/components/icons";
 
 export const navLinks = [
+  { label: "Solutions", href: "#solutions" },
   { label: "Products", href: "#products" },
   { label: "Security", href: "#security" },
-  { label: "AI Assistant", href: "#ai-assistant" },
+  { label: "Developers", href: "#developers" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
 export const heroHighlights = [
-  "Multi-asset support (BTC, ETH, stablecoins)",
-  "Institutional-grade security infrastructure",
-  "Built for businesses and financial teams",
+  "Multi-asset support",
+  "Secure infrastructure",
+  "Built for businesses",
 ] as const;
 
 export const overviewPoints = [
   {
-    title: "Unified visibility across fiat and crypto balances",
+    title: "Unified visibility for treasury and operations teams",
     description:
-      "Atlas Crypto gives institutional clients a secure operating environment to monitor fiat balances, stablecoins, and selected crypto assets through one controlled interface.",
+      "Atlas Crypto is presented as a secure environment where business teams can monitor account activity, selected digital assets, and operational status from one interface.",
   },
   {
-    title: "Operating model aligned with custody partners",
+    title: "Operational workflows designed for internal policy",
     description:
-      "Account structures are designed to work alongside custody partners, internal approvals, and compliance processes that support institutional financial workflows.",
+      "The operating model is designed to fit alongside approvals, custody relationships, and internal review steps that support disciplined financial operations.",
   },
   {
-    title: "Settlement infrastructure for business treasury activity",
+    title: "Settlement coordination for business activity",
     description:
-      "Funding, treasury movements, and counterparty settlement can be coordinated through infrastructure shaped around professional operating requirements.",
+      "Funding instructions, treasury movements, and settlement workflows are framed around practical business requirements rather than consumer-style crypto experiences.",
   },
   {
-    title: "API integrations and reporting pathways",
+    title: "Integration pathways for reporting and reconciliation",
     description:
-      "Documented API integrations help businesses connect balances, transaction events, and reporting data into treasury, ERP, and reconciliation systems.",
+      "API integrations and structured exports help internal teams connect account data into treasury, ERP, compliance, and reconciliation workflows.",
   },
 ] as const;
 
@@ -57,46 +57,40 @@ export const featureCards = [
     icon: LayersIcon,
     title: "Multi-asset support",
     description:
-      "Support for BTC, ETH, and selected stablecoins helps businesses manage digital asset operations with clearer asset-level visibility.",
+      "Support for BTC, ETH, and selected stablecoins gives businesses a clearer operating view across core digital asset balances.",
   },
   {
     icon: WalletIcon,
-    title: "Unified client console",
+    title: "Unified interface",
     description:
-      "Bring fiat balances and crypto positions together in one client console built for finance, treasury, and operations teams.",
+      "A single interface brings balance visibility, account status, and operational checkpoints together for finance and operations teams.",
   },
   {
     icon: LinkIcon,
     title: "API integrations",
     description:
-      "API integrations support internal connectivity for reporting, reconciliation, balance monitoring, and workflow automation.",
+      "Integration pathways support internal connectivity for reporting, reconciliation, balance monitoring, and downstream operational workflows.",
   },
   {
     icon: BoltIcon,
-    title: "Settlement infrastructure",
+    title: "Settlement workflows",
     description:
-      "A business-oriented settlement model helps institutional clients coordinate funding and movement instructions more efficiently.",
+      "Settlement workflows are designed to help business teams coordinate funding, transfers, and counterparties inside a more structured environment.",
   },
   {
     icon: ShieldIcon,
     title: "Secure custody model",
     description:
-      "Assets can sit within secure structures supported by custody partners, defined approvals, and a more disciplined control framework.",
+      "A secure custody model can be aligned with custody partners, defined approvals, and internal control expectations.",
   },
 ] as const;
 
 export const securityCards = [
   {
-    icon: ShieldIcon,
-    title: "Compliance workflows",
-    description:
-      "Structured onboarding, documentation review, and policy-aware oversight support a more controlled client operating model.",
-  },
-  {
     icon: UsersIcon,
     title: "Role-based access control",
     description:
-      "Permission layers help separate viewing, approval, and operational responsibilities across treasury, finance, and compliance teams.",
+      "Permission layers separate viewing, approval, and operational responsibilities across treasury, finance, and compliance roles.",
   },
   {
     icon: SlidersIcon,
@@ -108,95 +102,110 @@ export const securityCards = [
     icon: ClipboardIcon,
     title: "Audit logs",
     description:
-      "Activity records help teams review account changes, operational approvals, and movement instructions with greater accountability.",
+      "Activity records help teams review account changes, approvals, and movement instructions with stronger accountability.",
   },
   {
     icon: LockIcon,
     title: "Risk monitoring",
     description:
-      "Monitoring controls help identify unusual activity patterns and support escalation inside a secure operating environment.",
+      "Monitoring controls help surface unusual activity patterns and support escalation inside a secure operating environment.",
+  },
+  {
+    icon: ShieldIcon,
+    title: "Compliance workflows",
+    description:
+      "Structured onboarding, documentation review, and policy-aware oversight support a more controlled client operating model.",
   },
 ] as const;
 
 export const customerFlowSteps = [
   {
-    label: "SMS / WhatsApp Campaign",
-    description: "Future outbound message",
+    label: "Campaign",
+    description: "Targeted outreach introduces the service to relevant business prospects.",
     icon: SendIcon,
   },
   {
-    label: "Personalized Link",
-    description: "Tracked prospect entry",
-    icon: LinkIcon,
-  },
-  {
     label: "Landing Page",
-    description: "Product-specific destination",
+    description: "A focused institutional page explains the platform, controls, and operating model.",
     icon: BrowserIcon,
   },
   {
-    label: "AI Chat",
-    description: "Hermes first response",
+    label: "Contact",
+    description: "Prospects submit an enquiry through a structured contact form.",
     icon: MessageIcon,
   },
   {
-    label: "Human Sales",
-    description: "Qualified handoff",
+    label: "Sales Team",
+    description: "The sales team follows up with qualification, product context, and next steps.",
     icon: UsersIcon,
   },
 ] as const;
 
-export const aiAssistantCapabilities = [
-  "Answer client questions about product scope and onboarding",
-  "Qualify leads automatically before human review",
-  "Handle 80-90% of routine conversations",
-  "Transfer serious prospects to human sales teams",
-] as const;
-
-export const aiConversation = [
-  { speaker: "Client", message: "I want more information" },
-  { speaker: "AI", message: "I can help. Are you a business or individual?" },
-  { speaker: "Client", message: "Business." },
+export const futureCapabilityCards = [
   {
-    speaker: "AI",
-    message: "Understood. Which account structure or asset support are you evaluating?",
+    icon: BotIcon,
+    title: "Guided product education",
+    description:
+      "Optional assisted walkthroughs could help explain product scope and onboarding requirements in a more consistent format.",
+  },
+  {
+    icon: ClipboardIcon,
+    title: "Document preparation support",
+    description:
+      "Future workflows may help organise initial information requests before a human review begins.",
+  },
+  {
+    icon: UsersIcon,
+    title: "Sales routing assistance",
+    description:
+      "Qualified enquiries could be routed to the appropriate sales contact once those workflows are implemented.",
   },
 ] as const;
 
-export const aiSummaryPoints = [
-  "Lead type: business prospect",
-  "Interest: crypto account infrastructure",
-  "Next step: route to sales",
-] as const;
-
 export const infrastructureFlow = [
-  { label: "Client Onboarding", icon: BuildingIcon },
-  { label: "Unified Account Console", icon: WalletIcon },
-  { label: "Custody Partners", icon: ShieldIcon },
-  { label: "Settlement Rails", icon: BoltIcon },
-  { label: "API Integrations", icon: LinkIcon },
-  { label: "Reporting", icon: ClipboardIcon },
+  {
+    label: "Client onboarding",
+    description: "Business intake, documentation review, and account setup planning.",
+    icon: BuildingIcon,
+  },
+  {
+    label: "Unified interface",
+    description: "Shared visibility for treasury, finance, and operations users.",
+    icon: WalletIcon,
+  },
+  {
+    label: "Custody model",
+    description: "Operational structures aligned with custody partners and internal controls.",
+    icon: ShieldIcon,
+  },
+  {
+    label: "Settlement workflows",
+    description: "Controlled funding and movement instructions across business processes.",
+    icon: BoltIcon,
+  },
+  {
+    label: "API integrations",
+    description: "Connectivity for ERP, treasury, reporting, and reconciliation tooling.",
+    icon: LinkIcon,
+  },
+  {
+    label: "Reporting outputs",
+    description: "Structured exports for finance, audit, and compliance review.",
+    icon: ClipboardIcon,
+  },
 ] as const;
 
 export const developerHighlights = [
-  "API integrations for treasury, ERP, and reconciliation tooling",
-  "Structured data outputs aligned with finance and compliance review",
-  "Operational event visibility designed for internal reporting and oversight",
+  "API integration pathways for treasury, ERP, and reconciliation systems",
+  "Structured reporting outputs designed for finance and compliance review",
+  "Operational event visibility to support internal controls and downstream workflows",
 ] as const;
 
-export const footerPrimaryLinks = [
+export const footerLinks = [
   { label: "Products", href: "#products" },
   { label: "Solutions", href: "#solutions" },
+  { label: "Security", href: "#security" },
   { label: "Developers", href: "#developers" },
-  { label: "Contact", href: "#contact" },
-] as const;
-
-export const footerLegalLinks = [
   { label: "Legal", href: "#" },
   { label: "Privacy Policy", href: "#" },
 ] as const;
-
-export const decorativeIcons = {
-  arrow: ArrowRightIcon,
-  bot: BotIcon,
-} as const;

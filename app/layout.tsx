@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Atlas Crypto | Crypto Accounts for Businesses",
+  title: "Atlas Crypto | Digital Asset Infrastructure for Businesses",
   description:
-    "A premium marketing landing page for Atlas Crypto, presenting institutional crypto account infrastructure today and a coming-soon AI client assistant vision for future engagement workflows.",
+    "A production-ready marketing website for Atlas Crypto, presenting digital asset infrastructure, secure operational workflows, and integration-ready account environments designed for businesses.",
 };
 
 export default function RootLayout({

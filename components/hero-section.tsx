@@ -5,19 +5,18 @@ import { heroHighlights } from "@/lib/site-data";
 
 export function HeroSection() {
   return (
-    <section className="section-divider px-6 pb-20 pt-14 sm:pt-20 lg:px-8">
+    <section className="section-divider anchor-section px-6 pb-20 pt-14 sm:pb-24 sm:pt-20 lg:px-8">
       <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="max-w-2xl">
-          <span className="inline-flex rounded-full border border-[color:var(--border)] bg-white/90 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--brand)] shadow-sm">
-            Institutional crypto infrastructure
+          <span className="eyebrow-pill">
+            Digital asset infrastructure
           </span>
-          <h1 className="mt-6 font-[family-name:var(--font-sora)] text-5xl font-semibold tracking-tight text-[color:var(--text)] sm:text-6xl lg:text-7xl">
-            Crypto Accounts for Businesses
+          <h1 className="mt-6 font-[family-name:var(--font-sora)] text-4xl font-semibold tracking-tight text-[color:var(--text)] text-pretty sm:text-5xl lg:text-6xl">
+            Digital Asset Infrastructure Designed for Businesses
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-[color:var(--text-muted)] sm:text-xl">
-            Atlas Crypto provides businesses with a unified operating environment for fiat and digital
-            assets, combining compliance workflows, custody partner connectivity, and infrastructure aligned
-            with institutional financial workflows.
+          <p className="mt-6 max-w-xl text-lg leading-8 text-[color:var(--text-muted)] text-pretty sm:text-xl">
+            Atlas Crypto presents a secure environment for businesses that need structured access to digital
+            asset infrastructure, operational workflows, and reporting-ready account visibility.
           </p>
           <ul className="mt-7 space-y-3 text-sm text-[color:var(--text)] sm:text-base">
             {heroHighlights.map((item) => (
@@ -30,19 +29,16 @@ export function HeroSection() {
             ))}
           </ul>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#0f172e,#1640ff,#0eb7b6)] px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-blue-600/15 transition-transform hover:-translate-y-0.5"
-            >
+            <Link href="#contact" className="cta-primary px-6 py-3.5 text-sm">
               Contact Sales
             </Link>
-            <Link
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-[color:var(--border)] bg-white/90 px-6 py-3.5 text-sm font-semibold text-[color:var(--text)] transition-colors hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]"
-            >
+            <Link href="#contact" className="cta-secondary px-6 py-3.5 text-sm">
               Request Demo
             </Link>
           </div>
+          <p className="mt-5 text-sm leading-7 text-[color:var(--text-muted)]">
+            Designed for businesses evaluating a more controlled operating model for digital assets.
+          </p>
         </div>
 
         <div className="relative">
@@ -55,10 +51,10 @@ export function HeroSection() {
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--brand)]">
-                    Account overview
+                    Operating console
                   </p>
                   <h2 className="mt-2 font-[family-name:var(--font-sora)] text-2xl font-semibold text-[color:var(--text)]">
-                    Unified client console
+                    Unified business interface
                   </h2>
                 </div>
                 <div className="rounded-full border border-[color:var(--border)] bg-white px-3 py-1 text-xs font-semibold text-[color:var(--text-muted)]">
@@ -78,7 +74,7 @@ export function HeroSection() {
                     <div className="mt-4 space-y-3">
                       <div className="rounded-[1.25rem] bg-slate-50 p-4">
                         <p className="text-xs uppercase tracking-[0.18em] text-[color:var(--text-muted)]">
-                          Fiat balances
+                          Settlement balance
                         </p>
                         <p className="mt-2 font-[family-name:var(--font-sora)] text-2xl font-semibold text-[color:var(--text)]">
                           USD 2.4m
@@ -107,12 +103,13 @@ export function HeroSection() {
                   </div>
 
                   <div className="float-gentle-delay rounded-[1.5rem] border border-white/70 bg-[linear-gradient(180deg,#0f172e,#1e2d59)] p-5 text-white shadow-lg shadow-slate-900/10">
-                    <p className="text-sm text-slate-300">Settlement rails</p>
+                    <p className="text-sm text-slate-300">Operational workflows</p>
                     <p className="mt-3 font-[family-name:var(--font-sora)] text-2xl font-semibold">
-                      Funding and transfers
+                      Treasury and approvals
                     </p>
                     <p className="mt-3 text-sm leading-7 text-slate-300">
-                      Built for treasury teams that need dependable operating workflows across counterparties.
+                      Designed for businesses that need clear review steps, settlement coordination, and
+                      structured internal oversight.
                     </p>
                   </div>
                 </div>
@@ -132,7 +129,8 @@ export function HeroSection() {
                         Multi-asset operating view
                       </p>
                       <p className="mt-2 text-sm leading-7 text-[color:var(--text-muted)]">
-                        Monitor fiat, BTC, ETH, and stablecoin balances from one business interface.
+                        Monitor selected assets, balances, and account context from one business-facing
+                        interface.
                       </p>
                       <div className="mt-5 space-y-3">
                         <div className="h-2 rounded-full bg-white">
@@ -151,7 +149,7 @@ export function HeroSection() {
                     <div className="flex items-center justify-between">
                       <p className="text-sm font-medium text-[color:var(--text)]">Operations and controls</p>
                       <span className="rounded-full bg-[color:var(--brand-soft)] px-3 py-1 text-xs font-semibold text-[color:var(--brand)]">
-                        Policy aware
+                        Designed for businesses
                       </span>
                     </div>
                     <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -182,10 +180,14 @@ export function HeroSection() {
                     </div>
                     <div className="mt-4 rounded-2xl border border-dashed border-blue-200 bg-white/90 p-4">
                       <p className="text-xs uppercase tracking-[0.18em] text-[color:var(--brand)]">
-                        Future layer
+                        Reporting layer
                       </p>
                       <p className="mt-2 text-sm font-semibold text-[color:var(--text)]">
-                        Hermes AI Assistant coming soon
+                        Data exports prepared for internal review
+                      </p>
+                      <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
+                        Structured outputs help finance, compliance, and operations teams keep workflows
+                        aligned.
                       </p>
                     </div>
                   </div>
